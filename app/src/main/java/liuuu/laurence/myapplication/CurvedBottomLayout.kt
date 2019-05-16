@@ -28,12 +28,12 @@ class CurvedBottomLayout @JvmOverloads constructor(
         super.onDraw(canvas)
 
         mPath.moveTo(0f, 300f)
-        mPath.rQuadTo(100f, -100f, 200f, 0f)
-        mPath.rQuadTo(100f, 100f, 200f, 0f)
-        mPath.rQuadTo(100f, -100f, 200f, 0f)
-        mPath.rQuadTo(100f, 100f, 200f, 0f)
-        mPath.rQuadTo(100f, -100f, 200f, 0f)
-        mPath.rQuadTo(100f, 100f, 200f, 0f)
+        mPath.quadTo(100f,200f,200f,300f)
+        mPath.quadTo(300f,400f,400f,300f)
+        mPath.quadTo(500f,200f,600f,300f)
+        mPath.quadTo(700f,400f,800f,300f)
+        mPath.quadTo(900f,200f,1000f,300f)
+        mPath.quadTo(1100f,400f,1200f,300f)
         canvas?.drawPath(mPath, mPaint)
     }
 
